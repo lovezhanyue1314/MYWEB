@@ -1,40 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>自定义收藏夹</title>
-</head>
+<html xmlns = “http://www.w3.org/1999/xhtml”  >
+<头>
+< meta http-equiv = “内容类型” 内容= “text / html; 字符集 = utf-8”/>
+< title >自定义收藏夹</ title >
+</头>
 <!--<script type="text/ecmascript" src="md5.js"></script>-->
-<script type="text/ecmascript" src="md5.js"></script>
+<脚本类型=“text/ecmascript”src =“md5.js”> </脚本>
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>-->
-<script language="javascript">
-//脚本区、影视区、小说区、视频网站选择
-	function div_area_text(){
-		// alert(hex_md5(psd.value))
-        var traget1=document.getElementById("div2");
-        var traget2=document.getElementById("div4");
-        var traget3=document.getElementById("div5");
-        var traget4=document.getElementById("div6");
-        var traget5=document.getElementById("div7");
-        var md5_psd="8a40677ac017e2ea990e54af843a103e"
-        //脚本区显示、隐藏
-	    if (hex_md5(psd.value)==md5_psd && document.getElementById("area2").checked){
-	         if(traget1.style.display=="none"){
-	            area_hidden()
-                traget1.style.display="";
-            }else {
-                area_nochecked()
-                area_hidden()
+<语言脚本=“javascript”>
+// 得分区、影视区、小说区、视频网站选择
+	函数 div_area_text ( ) {
+		// 警报（hex_md5（psd.value））
+        var traget1 = document.getElementById ( " div2 " ) ;
+        var traget2 =document.getElementById ( "div4 " ) ;
+        var traget3 =document.getElementById ( " div5 " ) ;
+        var traget4 =文档。getElementById ( "div6" ) ;
+        var traget5 =文档。getElementById ( "div7" ) ;
+        var md5_psd = "8a40677ac017e2ea990e54af843a103e"
+        //脚本区域显示、隐藏
+	    如果 （hex_md5 （ psd.value ） == md5_psd && document.getElementById （“area2” ）。已检查）{
+	         如果（ traget1.style.display == “无”）{​
+	            区域隐藏（）
+                目标1.样式.显示=“”;
+            }别的 {
+                area_nochecked （）
+                区域隐藏（）
             }
         }
         //影视区显示、隐藏
-	    else if (hex_md5(psd.value)==md5_psd && document.getElementById("area3").checked){
-	         if(traget2.style.display=="none"){
-                area_hidden()
-                traget2.style.display="";
-            }else {
-                area_nochecked()
-                area_hidden()
+	    否则， 如果（ hex_md5 （psd.value）== md5_psd &&document.getElementById （“area3” ）。已检查）{
+	         如果（ traget2.style.display == “无”）{​
+                区域隐藏（）
+                traget2.风格。显示=“”；
+            }别的 {
+                area_nochecked （）
+                区域隐藏（）
             }
         }
         //小说区显示、隐藏
@@ -48,19 +48,19 @@
             }
         }
         //视频网站区显示、隐藏
-	    else if (hex_md5(psd.value)==md5_psd && document.getElementById("area5").checked){
-	         if(traget4.style.display=="none"){
-                area_hidden()
-                traget4.style.display="";
-            }else {
-                nochecked()
-                area_hidden()
+	    否则， 如果（ hex_md5 （psd.value）== md5_psd &&document.getElementById （“area5” ）。已检查）{
+	         如果（ traget4.style.display == “ none ”）{​
+                区域隐藏（）
+                traget4.样式. display = "" ;
+            }别的 {
+                未选中( )
+                区域隐藏（）
             }
         }
         //我的网站区显示、隐藏
-	    else if (hex_md5(psd.value)==md5_psd && document.getElementById("area5").checked){
-	         if(traget5.style.display=="none"){
-                area_hidden()
+	    否则， 如果（ hex_md5 （psd.value）== md5_psd &&document.getElementById （“area5” ）。已检查）{
+	         如果（ traget5.style.display == “ none ”）{​
+                区域隐藏（）
                 traget5.style.display="";
             }else {
                 nochecked()
